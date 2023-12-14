@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>关于 | rong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ycrrongos.github.io/favicon.ico?v=1702561547145">
+<link rel="stylesheet" href="https://ycrrongos.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+欢迎来到我的小站呀，很高兴遇见你！🤝
+
+🏠 关于本站就是GitHub做的
+👨‍💻 博主是谁rong
+⛹ 兴趣爱好 变成 我的世界 chatgpt
+📬 联系我呀 哔哩哔哩里说就是了
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ycrrongos.github.io">
+        <img src="https://ycrrongos.github.io/images/avatar.png?v=1702561547145" class="site-logo">
+        <h1 class="site-title">rong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://space.bilibili.com/1071785992?spm_id_from=333.337.0.0" class="site-nav" target="_blank">
+            哔哩哔哩
+          </a>
+        
+      
+        
+          <a href="https://ycrrongos.github.io/rongDownload.GitHub.io/" class="site-nav" target="_blank">
+            下载
+          </a>
+        
+      
+        
+          <a href="https://replit.com/@N3rdL0rd/firefox" class="site-nav">
+            VM firefox
+          </a>
+        
+      
+        
+          <a href="https://ycrrongos.github.io/Clockwork.html" class="site-nav">
+            Clockwork
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ycrrongos.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于</h2>
+            <div class="post-date">2019-01-24</div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+</blockquote>
+<h2 id="关于本站就是github做的">🏠 关于本站就是GitHub做的</h2>
+<h2 id="博主是谁rong">👨‍💻 博主是谁rong</h2>
+<h2 id="兴趣爱好-变成-我的世界-chatgpt">⛹ 兴趣爱好 变成 我的世界 chatgpt</h2>
+<h2 id="联系我呀-哔哩哔哩里说就是了">📬 联系我呀 哔哩哔哩里说就是了</h2>
+
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'ff6c29234479857f816b',
+        clientSecret: 'adc3eb3e3228140e23252a0936209b6550de1ffc',
+        repo: 'ycrrongos.github.io',
+        owner: 'ycrrongos',
+        admin: ['ycrrongos'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
