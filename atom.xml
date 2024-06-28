@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ycrrongos.github.io</id>
+    <title>rong</title>
+    <updated>2024-06-28T01:41:43.552Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ycrrongos.github.io"/>
+    <link rel="self" href="https://ycrrongos.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://ycrrongos.github.io/images/avatar.png</logo>
+    <icon>https://ycrrongos.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, rong</rights>
+    <entry>
+        <title type="html"><![CDATA[test]]></title>
+        <id>https://ycrrongos.github.io/post/test/</id>
+        <link href="https://ycrrongos.github.io/post/test/">
+        </link>
+        <updated>2024-06-28T01:30:25.000Z</updated>
+        <content type="html"><![CDATA[<p>test11451419180</p>
+]]></content>
+    </entry>
+</feed>
