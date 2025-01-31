@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>把chatgpt导入minecraft | rong</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://ycrrongos.github.io/favicon.ico?v=1738310869136">
+<link rel="stylesheet" href="https://ycrrongos.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="废话不多说直接上代码
+请把文件放在logs文件夹里，并创建一个叫gpt.txt的文件，一定要把窗口向视频里那样放，如果不行，请重新测量坐标并更改。
+import time
+import pyautogui
+import pyperclip
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ycrrongos.github.io">
+        <img src="https://ycrrongos.github.io/images/avatar.png?v=1738310869136" class="site-logo">
+        <h1 class="site-title">rong</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+        
+          <a href="https://space.bilibili.com/1071785992?spm_id_from=333.337.0.0" class="site-nav" target="_blank">
+            哔哩哔哩
+          </a>
+        
+      
+        
+          <a href="https://ycrrongos.github.io/rongDownload.GitHub.io/" class="site-nav" target="_blank">
+            一些网址
+          </a>
+        
+      
+        
+          <a href="https://wwtoolbox.github.io/" class="site-nav">
+            万物工具箱
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://ycrrongos.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">把chatgpt导入minecraft</h2>
+            <div class="post-date">2023-10-25</div>
+            
+            <div class="post-content" v-pre>
+              <p>废话不多说直接上代码<br>
+请把文件放在logs文件夹里，并创建一个叫gpt.txt的文件，一定要把窗口向视频里那样放，如果不行，请重新测量坐标并更改。</p>
+<pre><code>import time
+import pyautogui
+import pyperclip
+from mcpi.minecraft import Minecraft
+mc = Minecraft.create()
+mc.postToChat(&quot;rongmc聊天chatGPT已启动！&quot;)
+time.sleep(2)
+with open('latest.log', 'r', encoding='UTF-8') as f:
+    line = f.readlines()
+    txt=line
+f.close()
+q=0
+a=len(txt)
+print(a)
+mc.postToChat(&quot;初始化完毕！&quot;)
+#初始化
+while True:
+    time.sleep(2)
+    with open('latest.log', 'r', encoding='UTF-8') as f:
+        line = f.readlines()
+        txt=line
+    f.close()
+    #读取文件（行数和文件内容）
+    print(len(txt))
+    if q==1:
+        a=len(txt)
+        q=0
+        #如果已经向服务器发送消息就清零并更新列表数据
+    if len(txt)&gt;a:
+        pd=0
+        rc=0
+            
+                #如果服务器有人发消息就会让行数+1然后和之前的数据对比
+                
+        rc=0
+        pyautogui.click(947,650,button='left')
+        pyperclip.copy(txt[-1]) 
+        pyautogui.hotkey('ctrl', 'v')  
+        pyautogui.click(1232,656,button='left')
+        time.sleep(30)#将消息发送给gpt,并等待
+        pyautogui.click(768,550,button='left')
+        pyautogui.click(74,97,button='left')
+        pyautogui.hotkey('ctrl', 'a')
+        pyautogui.hotkey('ctrl', 'v')
+        pyautogui.hotkey('ctrl', 's')
+        #将回答粘贴在gpt.txt文件里
+#        pyautogui.click(62,677,button='left')
+#        pyautogui.hotkey('ctrl', 'v')
+#        pyautogui.keyDown('enter')  
+#        pyautogui.keyUp('enter')
+        f=open('gpt.txt','r',encoding='UTF-8')
+        line = f.readline().strip() 
+        txt=[]
+        txt.append(line)
+        l=line
+        while 1: 
+            line = f.readline().strip() 
+            txt.append(line)
+            if line==l:
+                break
+            l=line
+        f.close()
+        #读取gpt的回答，并逐行发送
+        for i in txt:
+            mc.postToChat(i)
+            time.sleep(0.5)
+        q=1#告诉判断已经发送消息了
+
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ycrrongos.github.io/post/wo-de-fu-wu-qi-you-mo-zu-la/">
+                  <h3 class="post-title">
+                    我的服务器有模组啦
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'ff6c29234479857f816b',
+        clientSecret: 'adc3eb3e3228140e23252a0936209b6550de1ffc',
+        repo: 'ycrrongos.github.io',
+        owner: 'ycrrongos',
+        admin: ['ycrrongos'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
